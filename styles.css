@@ -134,6 +134,13 @@ h1 {
   line-height: 1.32;
 }
 
+.tagline {
+  margin: 18px 0 0;
+  color: var(--amber);
+  font-size: clamp(19px, 2vw, 24px);
+  font-weight: 900;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -412,10 +419,32 @@ ul {
   max-width: 880px;
 }
 
+.contact-details {
+  max-width: 680px;
+  margin: 24px 0 0;
+  color: #063c3d;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
 .contact .button.primary {
   background: var(--ink);
   color: var(--white);
   border-color: var(--ink);
+}
+
+.contact-phone {
+  background: rgba(255, 255, 255, 0.24);
+  border-color: rgba(6, 19, 21, 0.24);
+  color: #061315;
 }
 
 .footer {
@@ -452,6 +481,10 @@ ul {
   .steps,
   .contact {
     grid-template-columns: 1fr;
+  }
+
+  .contact-actions {
+    justify-content: flex-start;
   }
 
   .hero-rail {
