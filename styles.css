@@ -221,7 +221,8 @@ h2 {
 }
 
 .service-grid,
-.steps {
+.steps,
+.project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
@@ -265,6 +266,64 @@ ul {
   padding-left: 18px;
   color: #53606b;
   line-height: 1.7;
+}
+
+.projects {
+  background: var(--paper);
+}
+
+.project-card {
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.project-photo {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  min-height: 240px;
+  color: #dce8ea;
+  background:
+    linear-gradient(135deg, rgba(30, 167, 168, 0.46), rgba(16, 19, 23, 0.9)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 24px),
+    #172025;
+}
+
+.project-photo.amber {
+  background:
+    linear-gradient(135deg, rgba(217, 154, 43, 0.52), rgba(16, 19, 23, 0.9)),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 24px),
+    #1c2024;
+}
+
+.project-photo.steel {
+  background:
+    linear-gradient(135deg, rgba(99, 113, 126, 0.62), rgba(16, 19, 23, 0.88)),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 28px),
+    #151a1f;
+}
+
+.project-photo span {
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(16, 19, 23, 0.46);
+  color: #f5f8f9;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.project-body {
+  padding: 26px 28px 30px;
+}
+
+.project-body p {
+  margin: 0;
+  color: #39444c;
+  font-size: 17px;
+  line-height: 1.45;
 }
 
 .evidence {
@@ -389,6 +448,7 @@ ul {
 
   .hero-rail,
   .service-grid,
+  .project-grid,
   .steps,
   .contact {
     grid-template-columns: 1fr;
