@@ -275,6 +275,59 @@ ul {
   line-height: 1.7;
 }
 
+.about {
+  background: var(--paper-2);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.7fr);
+  gap: 42px;
+  align-items: start;
+  margin-top: 42px;
+}
+
+.about-copy {
+  max-width: 880px;
+}
+
+.about-copy p {
+  margin: 0 0 22px;
+  color: #39444c;
+  font-size: 20px;
+  line-height: 1.52;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.about-principles {
+  display: grid;
+  gap: 12px;
+}
+
+.about-principles div {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+  align-items: center;
+  min-height: 72px;
+  padding: 18px 20px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.about-principles span {
+  color: var(--amber);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.about-principles strong {
+  font-size: 18px;
+}
+
 .projects {
   background: var(--paper);
 }
@@ -483,6 +536,7 @@ ul {
   }
 
   .hero-rail,
+  .about-grid,
   .service-grid,
   .project-grid,
   .steps,
